@@ -4,47 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Лабораторная работа #5</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+        
+        .big-text {
+            font-size: 24px;
+        }
+        
+        .spaced {
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Лабараторная работа #5</h1>
-    <p>Это моя первая Html-страница, создание в рамках изучения основ веб-разметки.</p>
-    <p>Это обычный абзац теста</p>
-    <p>это <strong>очень важная</strong>фраза.</p>
-    <p>Это <em>курсивный</em> тест</p>
-    <p>Линия 1 <br>Линия 2 </p>
+    <h1>Лабораторная работа #5</h1>
+    <p>Это моя первая Html-страница, созданная в рамках изучения основ веб-разметки.</p>
+    <p>Это обычный абзац текста</p>
+    <p>Это <strong>очень важная</strong> фраза.</p>
+    <p>Это <em>курсивный</em> текст</p>
+    <p>Линия 1 Линия 2</p>
 
-    <h2>Базовые HTml -теги </h2>
-    <p>Html позволяет <strong>выделять</strong> текст и делать <em>акценты</em></p>
+    <h2>Базовые HTML-теги</h2>
+    <p>HTML позволяет <strong>выделять</strong> текст и делать <em>акценты</em></p>
     <hr>
     <a href="https://github.com/Mikailov05/Lab5_Html_Mikailov">Мой GitHub</a>
     <p></p>
-    <img src="http://www.astro.spbu.ru/staff/afk/Teaching/Help/Tegs.htm" alt="Пример изображения">
+    <img src="https://placehold.co/600x400" alt="Пример изображения">
     <h2>Это подзаголовок</h2>
     <h3>Подраздел</h3>
 
     <h2>Мои списки</h2>
-    з
-    <p>1: Гарри Поттер 2:Илллюзия обмана 3:Бегуший в лабиринте
-    </p>
 
+    <p>1: Гарри Поттер 2:Иллюзия обмана 3:Бегущий в лабиринте</p>
 
     <ol>
-        <li>Первый пункт</li>
-        <ol>
-            <li>Вложенный 1</li>
-            <li>Вложенный 2</li>
-
-        </ol>
-        <li></li>
-        <ul></ul>
+        <li>Первый пункт
+            <ol>
+                <li>Вложенный 1</li>
+                <li>Вложенный 2</li>
+            </ol>
+        </li>
         <li>Второй пункт</li>
         <li>Третий пункт</li>
-
-
-
-
     </ol>
 
     <ul>
@@ -52,44 +57,111 @@
         <li>Еще один элемент</li>
     </ul>
 
-    <p id="intro"> Это абзац</p>
-    <p class="highlight"> Выделенный текст</p>
-    <p class="highlight big-text spaced"> ...</p>
+    <p id="intro">Это абзац</p>
+    <p class="highlight">Выделенный текст</p>
+    <p class="highlight big-text spaced">Текст с несколькими классами</p>
 
+    <span title="Это подсказка">Наведи на меня</span>
+    <p style="color:blue; font-size:20px;">синий текст</p>
+    <p><a href="https://google.com">Google</a></p>
+    <img src="https://placehold.co/400x300" alt="Котик">
+    <img src="https://placehold.co/200x150" alt="Изображение" width="200" height="150">
 
+    <p><a href="https://yandex.ru" target="_blank">Открыть в новой вкладке</a></p>
 
-    <span title=<body "Это подсказка">Наведи на меня</body>/body>
-<p> style = "color:blue; font-size:20px;">синий текст</p>
-<p> <a href="https://google.com">Google</a></p>
-<img src="#" alt="Котик">
-<img src="#" width="200", height="150">
-
-<p><a href="https://yandex.ru" target="_blank">Открыть в новой вкладке</a></p>
-
-
-<p>
-    <input type="number">
+    <p>
+        <input type="number">
         <input type="password">
+        <input type="email">
+    </p>
+    <p><input type="text" placeholder="Введите имя"></p>
 
-            <input type="email">
+    <h2>Пример атрибутов</h2>
+    <p id="main-text" class="highlight" title="Это всплывающая подсказка">Этот абзац содержит id, class и title</p>
+    <p><a href="https://example.com" target="_blank" title="Открывается в новой вкладке">Кликни меня</a></p>
+    <p><img src="https://placehold.co/150" alt="Пример изображения" width="150"></p>
 
-</p>
-<p><input type="text" placeholder="Введите имя"></p>
+    <h2>Атрибуты HTML</h2>
+    <button title="Нажми на меня">Кнопка</button>
+
+    <h2>Таблица</h2>
+    <table border="1">
+        <tr>
+            <th>Имя</th>
+            <th>Возраст</th>
+        </tr>
+        <tr>
+            <td>Алексей</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Мария</td>
+            <td>19</td>
+        </tr>
+    </table>
+
+    <h2>Форма</h2>
+    <form action="#" method="post">
+        <label for="name">Ваше имя:</label>
+        <input id="name" type="text" placeholder="Введите имя">
 
 
-<h2>Пример атрибутов</h2>
-<p> id = "main-text" class= "highlight" <title>="Это всплывающая подсказка">Этот абзац содержит id,class и <title></title></title></p>
-<p><a href = "https:example.com" target="_blank" title="открывается в ноыой вкладке">Кликни меня</a></p>
-<p><img src="https://placehold.co/150" alt="Пример изображения" width = "150"></p>
-
-<h2>Атрибуты HTML</h2>
-<button> <title>= "Нажми на меня">Кнопка</title></button>
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="example@mail.com">
 
 
+        <label for="password">Пароль:</label>
+        <input id="password" type="password" placeholder="Введите пароль">
 
 
+        <label for="age">Возраст:</label>
+        <input id="age" type="number" placeholder="Возраст">
 
 
+        <label>Дата рождения:</label>
+        <input type="date">
 
+
+        <input type="checkbox" id="agree">
+        <label for="agree">Я согласен</label>
+
+
+        <label>Пол:</label>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Мужчина</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Женщина</label>
+
+
+        <label for="message">Сообщение:</label>
+
+        <textarea id="message" placeholder="Введите сообщение" rows="4"></textarea>
+
+
+        <label for="group">Группа:</label>
+        <select id="group">
+            <option value=
+
+
+П-231">ИСП-231</option>
+            <option value="ИСП-232">ИСП-232</option>
+            <option value="ИСП-233">ИСП-233</option>
+        </select>
+
+
+        <label for="city">Город:</label>
+        <select id="city">
+            <option value="Махачкала">Махачкала</option>
+            <option value="Дербент">Дербент</option>
+            <option value="Волжский">Волжский</option>
+        </select>
+
+
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
+</body>
 
 </html>
